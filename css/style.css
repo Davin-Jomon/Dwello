@@ -65,7 +65,7 @@ header nav.middle ul li {
 header nav.middle ul li a {
     color: #2B1B12;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 550;
 }
 
@@ -128,7 +128,7 @@ section#hero .left-container p {
 
 section#hero .right-container {
     width: 50%;
-    margin-left: -120px;
+    margin-left: -100px;
     padding-top: 100px;
     position: relative;
     z-index: 1;
@@ -200,4 +200,121 @@ section#search-bar ul li button.button {
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap
+}
+#spotlight {
+    padding-top: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    overflow-x: hidden;
+}
+
+#spotlight div.left {
+    width: 50%;
+    margin-right: 70px;
+}
+
+#spotlight div.right {
+    width: 50%;
+}
+
+#spotlight div.right h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #2B1B12;
+    width: 500px;
+}
+
+#spotlight div.right p {
+    font-size: 24px;
+    color: #2B1B12;
+    width: 400px;
+    margin: 40px 0 ;
+    font-weight: 600;
+}
+
+
+#spotlight div.right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 450px;
+}
+
+#spotlight div.right ul li {
+    margin-right: 16px;
+    color: #2B1B12;
+    max-width: 20px;
+}
+
+#spotlight div.right ul li h3 {
+    font-size: 50px;
+    font-weight: 550;
+}
+
+#about {
+    padding-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+}
+
+#about h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #2B1B12;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#about p.text {
+    font-size: 24px;
+    color:  #4F3527;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-top: 24px;
+    font-weight: 600;
+    width: 700px;
+    text-align: center;
+}
+
+#about ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+#about ul li {
+    margin-right: 50px;
+    width: 500px;
+    background: #DDC7BB;
+    height: auto;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#about ul li h4 {
+    color: #2B1B12;
+    font-size: 22px;
+    font-weight: 550;
+    margin-bottom: 12px;
+}
+
+#about ul li p {
+    color: #4F3527;
+    font-size: 18px;
+    font-weight: 500;
+}
+#about ul li div.box {
+    width: 80px;
+    height: 80px;
+    background: #F9E8E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-bottom: 20px;
 }
