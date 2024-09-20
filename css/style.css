@@ -139,13 +139,12 @@ section#hero img.hero-image {
     width: 1000px;
     margin-top: 50px;
     margin-left: -250px;
-    position: relative;
 }
 
 section#search-bar { 
-    width: 75%;
+    width: 70%;
     height: 150px;
-    position: absolute;
+    position: relative;
     background: #DDC7BB;
     display: flex;
     justify-content: space-between;
@@ -158,19 +157,22 @@ section#search-bar {
 
 section#search-bar ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 
 }
 section#search-bar ul li {
-    margin-left: 20px;
-    margin-right: 20px;
     z-index: 1;
     font-size: 20px;
 }
+section#search-bar ul li:first-child{
+    margin-left: 20px;
+}
+section#search-bar ul li:last-child { 
+    margin-right: 20px;
+}
 section#search-bar ul li.search-input {
-    margin-right: 10px;
     padding: 20px 15px;
     border: none;
     border-radius: 8px;
@@ -199,10 +201,12 @@ section#search-bar ul li button.button {
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
-    white-space: nowrap
+    white-space: nowrap;
+    margin-left: 16px;
+
 }
 #spotlight {
-    padding-top: 30%;
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -590,3 +594,116 @@ section#search-bar ul li button.button {
     margin-top: 30px;
     font-weight: 550;
 }
+
+/* Responsive Design */
+
+@media (max-width: 1250px) {
+    section#search-bar {
+        width: 80%;
+        margin-left: 100px;
+
+    }
+    section#properties ul {
+        flex-wrap: wrap;
+    }
+    section#properties ul li  {
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+     
+
+  }
+  
+  @media (max-width: 960px) {
+    section#home {
+        width: 700px;
+        margin-left: 20px;
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+    header .middle, .left {
+        margin-bottom: 12px;
+        margin-right: 16px;
+    }
+    section#search-bar {
+        width: 80%;
+        margin-right: 16px;
+        flex-wrap: wrap;
+        height: 200px;
+
+    }
+    section#search-bar ul li {
+        margin: 16px;
+    }
+    section#spotlight {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        margin-left: 50px;
+    }
+    section#about p.text {
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    section#about ul  {
+        flex-wrap: wrap;
+    }
+    section#about ul  li {
+        width: 200px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+    section#properties ul {
+        flex-wrap: wrap;
+    }
+    section#properties ul li {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+
+    section#testimonials ul {
+        margin-right: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+    section#testimonials ul li { 
+        margin-bottom: 16px;
+    }
+    section#FAQ {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    footer .footer-content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    section#search-bar ul {
+        width: 100%;
+        
+        flex-wrap: wrap;
+
+
+    }
+    section#hero {
+      align-items: center;
+    }
+    section#hero img.hero-image { 
+        display: none;
+    }
+  }
+  
+  
